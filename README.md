@@ -43,7 +43,7 @@ interactions:
 
 ## Next steps
 1. prioritize securing your bot's credentials if you intend to have this code somewhere public, i recommend using an uncommited .env file which can be loaded by https://pypi.org/project/python-dotenv/
-2. consider using a virtual environment instead of relying on global packages, here are some tools which can you help you with that:
+2. consider using a virtual environment instead of relying on global packages, here are some tools which can help you with that:
    1. [Poetry](https://python-poetry.org/)
    2. [Pipenv](https://pipenv.pypa.io/en/latest/) 
       1. example: https://github.com/UltimateForm/mordhauTitles
