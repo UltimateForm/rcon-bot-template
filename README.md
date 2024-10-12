@@ -30,10 +30,10 @@ interactions:
 │   ├── logger.py # can delete but you'd need to replace all uses of it with something else
 │   ├── models.py
 │   └── parsers.py
-├── main.py
+├── main.py # bot entry point, this most likely where you're gonna be coding
 ├── persist
 │   └── bot.log # created when you run bot
-├── rcon # this folder is where the RCON connection is coded
+├── rcon # this folder is where the RCON connection is coded, you shouldn't have much to do here
 │   ├── rcon.py
 │   └── rcon_listener.py
 ├── requirements.txt # use this to install dependencies, i.e "pip install -r ./requirements.txt"
