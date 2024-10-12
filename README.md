@@ -4,6 +4,8 @@ This is a template project for RCON bots
 
 This was tested on Ubuntu, with python 3.11, but similar versions should work too
 
+Read this and the comments on the code for further insight
+
 ## Expected knowledge
 1. python 3
 2. command line familiarity
