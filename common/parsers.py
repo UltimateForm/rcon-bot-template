@@ -24,7 +24,7 @@ def parse_event(event: str, grok_pattern: str) -> tuple[bool, dict[str, str]]:
         return (True, match)
 
 
-def parse_killfeed_event(event: str) -> KillfeedEvent:
+def parse_killfeed_event(event: str) -> KillfeedEvent | None:
     (success, parsed) = parse_event(event, GROK_KILLFEED_EVENT)
     if not success:
         return None
@@ -38,7 +38,7 @@ def parse_login_event(event: str) -> LoginEvent | None:
     return LoginEvent(**parsed)
 
 
-def parse_chat_event(event: str) -> ChatEvent:
+def parse_chat_event(event: str) -> ChatEvent | None:
     (success, parsed) = parse_event(event, GROK_CHAT_EVENT)
     if not success:
         return None
