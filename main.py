@@ -30,7 +30,7 @@ rcon_data = {
 # for how to use with a persistent connection
 async def send_command(cmd: str):
     async with asyncio.timeout(10):
-        async with RconContext() as client:
+        async with RconContext(**rcon_data) as client:
             await client.execute(cmd)
 
 
